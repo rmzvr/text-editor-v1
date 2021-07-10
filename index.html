@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="main">
+
+            <!-- Top Box -->
+            <div class="box box--padding">
+                <div class="box__content">
+                    <p class="box__content-item">Lorem ipsum dolor sit amet.</p>
+                    <p class="box__content-item">Lorem ipsum dolor sit amet.</p>
+                    <p class="box__content-item">Lorem ipsum dolor sit amet.</p>
+                    <p class="box__content-item">Lorem ipsum dolor sit amet.</p>
+                    <p class="box__content-item">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <!-- Buttons block -->
+            <div class="buttons">
+                <button class="btn btn--theme--orange" type="button">edit</button>
+                <button class="btn btn--theme--blue" type="button">style</button>
+            </div>
+
+            <!-- Bottom Box -->
+            <div class="box">
+
+                <!-- Form Edit -->
+                <form class="form-edit hidden" name="formEdit">
+                    <textarea class="form-edit__textarea"></textarea>
+                    <button class="btn btn--theme--red" type="button">add</button>
+                    <button class="btn btn--theme--green" type="button">save</button>
+                </form>
+
+                <!-- Form Style -->
+                <form class="form-style hidden" name="formStyle">
+
+                    <!-- Font Size -->
+                    <p class="form-style__title">Font Size:</p>
+                    <input class="form-style__radio form-style__radio--margin--first" name="formStyleRadio" type="radio"
+                        value="12px">12px
+                    <input class="form-style__radio" name="formStyleRadio" type="radio" value="14px">14px
+                    <input class="form-style__radio" name="formStyleRadio" type="radio" value="16px" checked>16px
+                    <input class="form-style__radio" name="formStyleRadio" type="radio" value="18px">18px
+                    <input class="form-style__radio" name="formStyleRadio" type="radio" value="20px">20px
+
+                    <!-- Font Family -->
+                    <p class="form-style__title">Font Family:</p>
+                    <select class="input-text" name="formStyleSelect">
+                        <option class="form-style__option" value="Choose option">Choose option</option>
+                        <option class="form-style__option" value="cursive">cursive</option>
+                        <option class="form-style__option" value="fantasy">fantasy</option>
+                        <option class="form-style__option" value="monospace">monospace</option>
+                        <option class="form-style__option" value="sens-serif">sens-serif</option>
+                    </select>
+
+                    <!-- Colors -->
+                    <p class="form-style__title">Colors:</p>
+                    <button class="btn btn--type--colors" type="button" name="formStyleBtn">Color of Text</button>
+                    <button class="btn btn--type--colors" type="button" name="formStyleBtn">Background color</button>
+
+                    <!-- Color Picker -->
+                    <div class="color-picker hidden">
+                        <div class="color-picker__item" style="background-color: red;"></div>
+                        <div class="color-picker__item" style="background-color: green;"></div>
+                        <div class="color-picker__item" style="background-color: blue;"></div>
+                        <div class="color-picker__item" style="background-color: orange;"></div>
+                        <div class="color-picker__item" style="background-color: pink;"></div>
+                        <div class="color-picker__item" style="background-color: black;"></div>
+                        <div class="color-picker__item" style="background-color: white;"></div>
+                        <div class="color-picker__item" style="background-color: violet;"></div>
+                        <div class="color-picker__item" style="background-color: gray;"></div>
+                    </div>
+
+                    <!-- Style -->
+                    <p class="form-style__title">Style:</p>
+                    <input class="form-style__checkbox form-style__checkbox--margin--first" name="formStyleCheckbox"
+                        type="checkbox" value="bold">Bold text
+                    <input class="form-style__checkbox" name="formStyleCheckbox" type="checkbox" value="cursive">Cursive
+                    text
+                </form>
+            </div>
+        </section>
+
+        <section class="chooser hidden">
+            <div class="box">
+
+                <!-- Choose -->
+                <p class="box__chooser-title">Choose what you want:</p>
+                <form name="formChooser">
+                    <input class="box__chooser-radio box__chooser-radio--margin--first" name="boxChooserRadio"
+                        type="radio" value="table">table
+                    <input class="box__chooser-radio" name="boxChooserRadio" type="radio" value="list">list
+                </form>
+
+                <!-- Form Table -->
+                <form class="form-table box__form-table hidden" name="formTable">
+                    <div class="form-item">
+                        <span class="form-descript">Count TR:</span>
+                        <input class="input-text input-text--style--table-large" name="countTr" type="text" placeholder="Count TR:">
+                    </div>
+                    <div class="form-item">
+                        <span class="form-descript">Count TD:</span>
+                        <input class="input-text input-text--style--table-large" name="countTd" type="text" placeholder="Count TD:">
+                    </div>
+                    <p class="form-title">Add style to your table:</p>
+                    <div class="form-item">
+                        <span class="form-descript">Width of TD:</span>
+                        <input class="input-text input-text--style--table-large" name="widthTd" type="text" placeholder="Width of TD:">
+                    </div>
+                    <div class="form-item">
+                        <span class="form-descript">Heigth of TD:</span>
+                        <input class="input-text input-text--style--table-large" name="heigthTd" type="text" placeholder="Heigth of TD:">
+                    </div>
+                    <div class="form-item">
+                        <div class="form-wrapper">
+                            <span class="form-descript">Width of border:</span>
+                            <input class="input-text input-text--style--table-small" name="widthBorder" type="text" placeholder="Width:">
+                        </div>
+                        <div class="form-wrapper">
+                            <span class="form-descript">Type of border:</span>
+                            <select class="input-text input-text--style--table-small" name="typeBorder">
+                                <option value="solid" selected>solid</option>
+                                <option value="dashed">dashed</option>
+                                <option value="dotted">dotted</option>
+                                <option value="double">double</option>
+                            </select>
+                        </div>
+                        <div class="form-wrapper">
+                            <span class="form-descript">Color of border:</span>
+                            <select class="input-text input-text--style--table-small" name="colorBorder">
+                                <option value="black" selected>black</option>
+                                <option value="red">red</option>
+                                <option value="blue">blue</option>
+                                <option value="green">green</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn form-table__btn btn--theme--green" type="button">Create table</button>
+                </form>
+
+                <!-- Form List -->
+                <form class="form-list box__form-list hidden" name="formList">
+                    <div class="form-item">
+                        <span class="form-descript">Count Li:</span>
+                        <input class="input-text input-text--style--table-large" name="countLi" type="text" placeholder="Count Li:">
+                    </div>
+                    <div class="form-item">
+                        <span class="form-descript">Type of marks:</span>
+                        <select class="input-text input-text--style--table-large" name="typeMarks">
+                            <option value="circle">circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select>
+                    </div>
+                    <button class="btn form-list__btn btn--theme--green" type="button">Create list</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
